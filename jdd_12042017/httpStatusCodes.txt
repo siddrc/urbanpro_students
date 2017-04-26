@@ -1,0 +1,12 @@
+HTTP
+  --hypertext transfer protocol
+  
+  --Tim Berners Lee
+    Invented the internet
+	
+	
+	HTTP protocol 
+	http status codes
+	 200 ..2xx -- Success messages --------------------------STATE OF THE SERVER
+	 400 ..4xx -- You are not authorised to this resource----STATE OF THE SERVER
+	 500 ..5xx -- Internal Server Error----------------------STATE OF THE SERVER

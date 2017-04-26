@@ -1,0 +1,35 @@
+
+<html>
+<head>
+</head>
+<body>
+The score is
+<div id="zone">
+
+
+
+</div>
+<!--<input type="text" id="zone"/>-->
+<script type="text/javascript">
+var data = {
+  runs: 141,
+  overs: 10,
+  wickets :1 
+}
+function callMeEveryTime(){
+  var runs = data.runs;
+  runs++;///1st iteration .....runs - 142 data.runs -> 141
+         //2nd iteration ....runs --- 142 ....data.runs -> 1
+  data.runs = runs;
+  var color ="blue"
+  if(runs > 200){
+    color = "green"
+  }
+  //document.getElementById("zone").innerHTML = "runs : <font color="+color+">"+data.runs+"</font>";
+  
+}
+setInterval(callMeEveryTime,1000)
+</script>
+</body>
+</html>
+

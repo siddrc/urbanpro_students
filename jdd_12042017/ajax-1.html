@@ -1,0 +1,43 @@
+<html>
+<script>
+
+var ajaxInitiator;
+if (window.XMLHttpRequest) {
+    ajaxInitiator = new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+    ajaxInitiator = new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+ajaxInitiator.open("GET","/applicationName/user",true);
+/*0: request not initialized 
+1: server connection established
+2: request received 
+3: processing request 
+4: request finished and response is ready*/
+ajaxInitiator.onreadystatechange = function(response){
+  if(this.readyState < 4 ){
+	 //show loader on the front end
+  }
+   if(response.statusCode == 200 && this.readyState === 4 )
+     alert("All good")
+  else if (response.statusCode == 500)
+	 alert("Error :")
+
+}  
+
+
+ajaxInitiator.send();
+
+
+</script>
+
+GET -- to obtain data from server--- request types -- READ OPERATION
+POST -- to create data in the server ---- CREATE OPERATION
+PUT -- to update some data in the server --- UPDATE OPERATION
+DELETE --- to delete in the server -- DELETE OPERATION
+OPTIONS --- not used much
+
+CRUD
+
+REST
