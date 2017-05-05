@@ -3,18 +3,20 @@
 
 var ajaxInitiator;
 if (window.XMLHttpRequest) {
-    ajaxInitiator = new XMLHttpRequest();
+		ajaxInitiator = new XMLHttpRequest();
     } else {
-    // code for IE6, IE5
-    ajaxInitiator = new ActiveXObject("Microsoft.XMLHTTP");
-}
+		// code for IE6, IE5
+		ajaxInitiator = new ActiveXObject("Microsoft.XMLHTTP");
+    }
 
 ajaxInitiator.open("GET","/applicationName/user",true);
-/*0: request not initialized 
+/*
+0: request not initialized 
 1: server connection established
 2: request received 
 3: processing request 
-4: request finished and response is ready*/
+4: request finished and response is ready
+*/
 ajaxInitiator.onreadystatechange = function(response){
   if(this.readyState < 4 ){
 	 //show loader on the front end
