@@ -1,0 +1,44 @@
+//Prod box 
+//  89.187.89.190:9999 ------ DNS -- doman name server
+///www.flipkart2.com -> 89.187.89.190:9999
+/*
+-----------------------------------------------------
+Front End Tech --
+1. Angular------- JS & JSON
+2. Knockout------- JS & JSON
+3. Ember------- JS & JSON
+4. React------- JS & JSON
+5. Vue------- JS & JSON
+6. Angular-Material JS------- JS & JSON
+7. jQuery--------- JS & JSON
+   Browser dont care what server u use
+
+--------------------------
+Server(backend) doesnt care what front end tech you use.
+1. Nodejs -- JS,JSON,more and more of JS JSON and JS
+   WebServer
+   Express/Swagger/Sails
+
+
+2. Apache Tomcat --- Java/J2EE -- Servlets,JSP, EJB --- ?? JSON --- Middleware which will convert JSON to Java object
+3. Microsoft IIS server - C# language ?? JSON
+4. Apache Server --- PHP
+
+ --------------------------
+Database doesnt care what FE and what BE
+ 1. MonogDB -- JSON and JS -- 22017
+ 2. Oracle -- PL/SQL -- 3303
+ 3. Sybase -- SQL  --- 87877
+ 4. mySQL -- SQL --- 37017
+ 5. MS-SQL -- SQL--XXX-----they need port
+
+ Ports like your TV channels
+ 
+
+
+
+*/
+Resources
+
+Download mongoDB from https://www.mongodb.com/download-center?jmp=nav#community
+https://www.mongodb.com/compare/mongodb-mysql
