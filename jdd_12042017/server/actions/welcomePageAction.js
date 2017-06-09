@@ -15,17 +15,13 @@ router.get('/', function(req, res) {
      database.read(dbReadParams);
      
   }
-)
+);
 
-//http://localhost:9990/start/start
+//http://localhost:9990/start/engine
 
-router.get('/start', function(req, res) {
+router.get('/engine', function(req, res) {
 
-	 /*
-      db.test1.find({......})
-
-	 */
-      res.send("Hi, the application is running");
+	
 });
 
 //http://localhost:9990/start/hi

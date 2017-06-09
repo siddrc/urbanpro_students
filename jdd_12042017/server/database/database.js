@@ -14,7 +14,13 @@ function readHandler(db,dbReadParams){
 	var collection = db.collection(dbReadParams.collectionName);
          collection.find( dbReadParams.criteria ,  
          	dbReadParams.projection).toArray(function(error,docs){
-         		dbReadParams.callAfterDatabaseAction(docs);
+         		if(!error){
+         			dbReadParams.callAfterDatabaseAction(docs);	
+         		}else{
+         			console.log("Error "+error);
+         			//Mistake to be clarified with jd
+         		}
+         		
    })
 }
 Database.prototype.insert = function(){
