@@ -7,9 +7,11 @@ testApp.controller("TestController",function($scope,$http){
   // directives ,ng-*
   // services 
   // $scope , $http  - ajax 
-  $http.get("http://localhost:9994/start").then(function(){
-
-
+  // http://localhost:9990/ajax
+  $http.get("/ajax").then(function(responseFromServer){
+  
+  console.log("responseFromServer "+JSON.stringify(responseFromServer,null,2));
+   
 
 
   	// here
